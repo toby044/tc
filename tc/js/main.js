@@ -1,8 +1,8 @@
-'use strict';
+"use strict";
 
 // Used for debugging
 
-// console.log("This is working !"); 
+// console.log("This is working !");
 // console.error("This is an error !");
 // console.warn("This is a warning !");
 
@@ -18,7 +18,7 @@
 // const x = null; //Empty variable
 // const y = undefined; //Can be defined, or initialized
 // let z; //Undefined
-// console.log(typeof name); //typeof Used to test data type 
+// console.log(typeof name); //typeof Used to test data type
 
 // Concatenation  OLD METHOD
 // onst name = "John";
@@ -90,13 +90,13 @@
 ];*/
 
 // console.log(todos); // Logging array with object
-// console.log(todos[1].text) // Logging data withing the object of the array
+// console.log(todos[1].text) // Logging data within the object of the array
 
-// const todoJSON = JSON.stringify(todos); 
+// const todoJSON = JSON.stringify(todos);
 // console.log(todoJSON); // How we would send data to a server with JSON
 
 // Loops
-// For 
+// For
 
 /*const todos = [
     {
@@ -116,7 +116,7 @@
     }
 ];*/
 
-// let i = 0  // Sets the variable 
+// let i = 0  // Sets the variable
 // i < 10 // The limitor of the loops. It is gonna run until this condition is met
 // i++ // Every time the loop runs, add this, in this case, 1
 // This loop stops at 10, because it is set to run only when i < 10. This stops it after loop 9 has been completed
@@ -164,7 +164,7 @@ while(i < 10) {
     console.log(todo.text);
 });*/
 
-// Map 
+// Map
 /*const todoText = todos.map(function(todo) {
     return todo.text; //returns array of text
 });
@@ -179,21 +179,39 @@ console.log(todoText);*/
 console.log(todoCompleted);*/
 
 // Conditionals
+// if(this is true), if else(other thing is true), else(do this);
+// const x = 4;
+// const y = 10;
 
-const x = 4;
-const y = 10;
+// if (x > 5 || y > 10) {
+// console.log('x is more than 5 or y is more than 10');
+// } else if(x > 10) {
+//     console.log('x is greater than 10');
+// } else {
+//     console.log('x is less than ten');
+// };
 
-if (x > 5 || y > 10) {
-    console.log('x is more than 5 or y is more than 10');
-} else if(x > 10) {
-    console.log('x is greater than 10');
-} else {
-    console.log('x is less than ten');
-};
+const tunes = [
+  {
+    title: "There goes my love",
+    composer: "The Blue Van",
+    year: 2008
+  },
+  {
+    title: "Numb",
+    composer: "Linkin Park",
+    year: 2003,
+  },
+];
 
+document.getElementById("stringThis").innerHTML = tunes[0].title + ", " + tunes[0].composer + ", " + tunes[0].year; 
 
+console.log(JSON.stringify(tunes));
 
-
-
-
-
+// Menu generator som kan genbruges, når du har lavet functioner til at generere footer og header på en side.
+// windows.addEventListener('load', function() {
+//     makeMenu("menu");
+//     setTitles("Title Name - Date");
+//     setFooter("tobias, 2021");
+//     //Functions to run whenever the page loads
+// });
